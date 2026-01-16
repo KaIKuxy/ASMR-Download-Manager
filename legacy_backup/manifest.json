@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ASMR.one Download Manager",
-  "version": "2.0",
-  "description": "Download manager for ASMR.one (React + Vite)",
+  "version": "1.0",
+  "description": "Download manager for ASMR.one with background persistence and folder organization.",
   "permissions": [
     "downloads",
     "storage",
@@ -15,13 +15,13 @@
     "*://api.asmr-200.com/*"
   ],
   "background": {
-    "service_worker": "src/background/index.js",
-    "type": "module"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["*://asmr.one/*", "*://www.asmr.one/*"],
-      "js": ["src/content/index.jsx"],
+      "js": ["content.js"],
+      "css": ["content.css"],
       "run_at": "document_end"
     }
   ],

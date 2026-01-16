@@ -15,18 +15,35 @@
     "*://api.asmr-200.com/*"
   ],
   "background": {
-    "service_worker": "src/background/index.js",
+    "service_worker": "service-worker-loader.js",
     "type": "module"
   },
   "content_scripts": [
     {
-      "matches": ["*://asmr.one/*", "*://www.asmr.one/*"],
-      "js": ["src/content/index.jsx"],
+      "js": [
+        "assets/index.jsx-BwhkD7PB.js"
+      ],
+      "matches": [
+        "*://asmr.one/*",
+        "*://www.asmr.one/*"
+      ],
       "run_at": "document_end"
     }
   ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "ASMR.one Download Manager"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://asmr.one/*",
+        "*://www.asmr.one/*"
+      ],
+      "resources": [
+        "assets/index.jsx-BwhkD7PB.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
 }
