@@ -1,4 +1,11 @@
+
+# Build artifacts
+dist/
+
+# Dependencies
+node_modules/
+
+# OS misc
 .DS_Store
-node_modules
 *.log
-.vscode
+.vscode/

@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>ASMR.one Manager</title>
   <style>
-    body { width: 350px; padding: 10px; font-family: sans-serif; background: #1d1d1d; color: #fff; }
-    .item { background: #262626; margin-bottom: 8px; padding: 8px; border-radius: 4px; }
-    .header { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px; font-weight: bold; }
-    .progress { height: 4px; background: #444; border-radius: 2px; overflow: hidden; }
-    .fill { background: #4caf50; height: 100%; transition: width 0.3s; }
+    body {
+      width: 350px;
+      padding: 10px;
+      font-family: sans-serif;
+      background: #1d1d1d;
+      color: #fff;
+    }
+
+    .item {
+      background: #262626;
+      margin-bottom: 8px;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .progress {
+      height: 4px;
+      background: #444;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .fill {
+      background: #4caf50;
+      height: 100%;
+      transition: width 0.3s;
+    }
   </style>
 </head>
+
 <body>
   <h3>Download Queue</h3>
   <div id="queue">Loading...</div>
-  <script src="popup.js"></script>
+  <script type="module" src="popup.js"></script>
 </body>
+
 </html>

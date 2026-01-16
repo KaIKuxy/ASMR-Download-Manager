@@ -1,0 +1,39 @@
+/* ASMR Download Manager Button Styles */
+.asmr-dl-btn {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #e91e63; /* Default */
+  transition: transform 0.2s, background-color 0.2s;
+  pointer-events: auto;
+}
+
+.asmr-dl-btn:hover {
+  transform: scale(1.1);
+}
+
+.asmr-dl-btn:active {
+  transform: scale(0.95);
+}
+
+/* Status Variants */
+.asmr-dl-btn.status-completed {
+  background-color: #4caf50;
+}
+
+.asmr-dl-btn.status-error {
+  background-color: #f44336;
+}
+
+.asmr-dl-btn.status-downloading {
+  background-color: #2196f3;
+}
