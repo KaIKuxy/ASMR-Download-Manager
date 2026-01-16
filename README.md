@@ -9,7 +9,20 @@ A Chrome Extension designed to enhance the experience on ASMR.one by providing i
 -   **Visual Feedback**: Real-time status updates (Downloading, Completed, Error) directly on the UI.
 -   **Modern Tech Stack**: extensive use of React 19 and Vite for fast builds and hot reloading during development.
 
-## 🛠️ Installation (Developer Mode)
+## 📥 Installation (Quick Start)
+
+You don't need to build the project yourself! You can download the latest version directly from GitHub Releases.
+
+1.  Go to the [Releases](https://github.com/KaIKuxy/ASMR-Download-Manager/releases) page.
+2.  Find the latest version (e.g., `v1.0.0`).
+3.  Download `asmr-download-manager-extension.zip`.
+4.  Unzip the file to a folder.
+5.  Open Chrome and navigate to `chrome://extensions/`.
+6.  Enable **Developer mode** (toggle in the top right corner).
+7.  Click **Load unpacked**.
+8.  Select the unzipped folder.
+
+## 🛠️ Installation (Developer Build)
 
 1.  **Clone the repository**
     ```bash
