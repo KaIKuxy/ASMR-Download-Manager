@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "ASMR.one Download Manager",
+  "version": "1.0",
+  "description": "Download manager for ASMR.one with background persistence and folder organization.",
+  "permissions": [
+    "downloads",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://asmr.one/*",
+    "*://www.asmr.one/*",
+    "*://api.asmr-200.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://asmr.one/*", "*://www.asmr.one/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ASMR.one Download Manager"
+  }
+}
